@@ -303,6 +303,24 @@ body {
     opacity: 1;
 }
 
+.bxl-react:hover {
+    transition: all 0.5s;
+    color: #61dafb;
+}
+
+.bxl-react p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    color:#fff;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.bxl-react:hover p {
+    opacity: 1;
+}
+
 @media (max-width: 1000px) {
     * {
         transition: all 0.5s;
