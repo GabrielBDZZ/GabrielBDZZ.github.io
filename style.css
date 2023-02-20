@@ -25,6 +25,7 @@ body {
     background: #2b2b2b;
     transition: all 0.5s;
     position: fixed;
+    z-index: 999;
 }
 
 .navigation .logo {
@@ -181,19 +182,20 @@ body {
 }
 
 #about p {
-    margin: 0 1rem;
+    margin: 30px 10px 0 10px;
+    font-size: 20px;
 }
 
 .projects {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;;
 }
 
 #projects-h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
     line-height: 4rem;
     padding: 0px;
     padding-left: 5%;
@@ -206,6 +208,33 @@ body {
     align-items: center;
     box-shadow: 0 0.5rem 1.5rem #000000;
     border-radius: 5px;
+}
+
+.project1 {
+    position: relative;
+}
+
+.project3:hover, .project2:hover, .project1:hover > *:not(.habits-text) {
+    filter: blur(4px);
+    transition: all 0.2s;
+  }
+
+.project1:hover > .habits-text {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.habits-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    opacity: 0;
 }
 
 #skills-h1 {
