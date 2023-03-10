@@ -210,21 +210,22 @@ body {
     border-radius: 5px;
 }
 
-.project1 {
+.project1, .project2 {
     position: relative;
 }
 
-.project3:hover, .project2:hover, .project1:hover > *:not(.habits-text) {
+.project3:hover, .project2:hover *:not(.costs-text), .project1:hover > *:not(.habits-text) {
     filter: blur(4px);
     transition: all 0.2s;
   }
 
-.project1:hover > .habits-text {
+.project1:hover > .habits-text,
+.project2:hover > .costs-text {
     opacity: 1;
     transition: all 0.2s;
 }
 
-.habits-text {
+.habits-text, .costs-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -235,6 +236,10 @@ body {
     text-align: center;
     white-space: nowrap;
     opacity: 0;
+}
+
+.costs-text {
+    color: #333
 }
 
 #skills-h1 {
@@ -462,10 +467,6 @@ body {
     #projects-h1, #skills-h1 {
         font-size: 2.5rem;
         line-height: 3rem;
-    }
-
-    .bxl-javascript p {
-        transform: translate(0);
     }
 
     .projects img {
