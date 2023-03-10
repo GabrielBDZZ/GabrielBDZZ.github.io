@@ -214,18 +214,18 @@ body {
     position: relative;
 }
 
-.project3:hover, .project2:hover *:not(.costs-text), .project1:hover > *:not(.habits-text) {
+.project3:hover, .project2:hover *:not(.projects-text), .project1:hover > *:not(.projects-text) {
     filter: blur(4px);
     transition: all 0.2s;
   }
 
-.project1:hover > .habits-text,
-.project2:hover > .costs-text {
+.project1:hover > .projects-text,
+.project2:hover > .projects-text {
     opacity: 1;
     transition: all 0.2s;
 }
 
-.habits-text, .costs-text {
+.projects-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -238,7 +238,7 @@ body {
     opacity: 0;
 }
 
-.costs-text {
+.project2 p {
     color: #333
 }
 
